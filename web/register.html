@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .box {
+                border: 2px solid black;
+                padding: 5px;
+                background-color: lightcyan;
+                text-align: center;
+                width: 300px;                
+                border-radius: 7px;
+                height: 300px;
+                box-shadow: 4px 4px 10px rgba(1,1,1,1);
+            }
+            body{
+                background-image: url("image/music2.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 320px;
+                
+            }
+            a{
+                border: 2px solid lightskyblue;
+                border-radius: 7px;
+                padding: 0.1px;
+                height: 0.5px;
+                width: fit-content;
+                background-color: lightskyblue;
+            }
+            img{
+               
+                 border-radius: 50%;
+            }
+            *
+            {
+                margin:0;
+                padding: 0;
+            }
+            header{
+                height: 30px;
+                 background-color: #00FF7F;
+            }
+            .heading{
+                color: black;
+                font-weight: bold;
+                font-family: arial,sans-serif;
+                text-align: center;
+               
+            }
+            h2{
+                margin-left: 8px;
+                color: #003366;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="heading">&#127900; SND Tunes &#127900;</p>
+        </header><hr><br>
+        
+        
+    <center>
+        <div class="box">
+            <div style="display: flex;"> <img src="image/music10.png" alt="null" height="25" width="25" style=""><h2>USER REGISTRATION</h2></div>
+            <br>
+<pre>
+ <img src="image/logo1.jpg" alt="Not availabe"   height="60" width="60">
+</pre>
+ 
+<form action="Register" method="post">
+    <pre>
+               <input type="file" name="image"> 
+
+<input type="text" name="name" placeholder="Enter your name">
+<input type="text" name="mob" placeholder="Enter your mobile no.">
+<input type="text" name="email" placeholder="Enter your email">
+<input type="text" id="pwd1" name="pwd" placeholder="Enter strong password">
+<input type="text"  id="pwd2" placeholder="Enter confirm password">
+<input type="submit" style="color: blue" value="Register"> <span id="one"></span><br>
+<a href="user.html" style="color: black" >SIGN IN/UP</a>
+  <script>
+        
+        function valid()
+        {
+        
+        pwd1=document.getElementById("pwd1").value;
+        pwd2=document.getElementById("pwd2").value;
+        
+        
+        if(pwd1==pwd2)
+        {
+         return true;   
+    }
+    else
+    {
+        document.getElementById("one").innerHTML="password and confirm password not match";
+        
+        
+        return false;
+    }
+        }
+        
+        
+        </script>
+
+            </pre>
+        </form>
+        </div>
+    </center>
+    </body>
+</html>
+
+
